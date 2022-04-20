@@ -1,1 +1,1 @@
-# Expense-Tracker
+# Exercising Django
