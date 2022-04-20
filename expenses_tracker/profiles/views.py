@@ -113,6 +113,7 @@ def delete_profile(request):
     profile = get_profile()
     if request.method == 'POST':
         profile.delete()
+        Expense.objects.all().delete()
         return redirect('home')
     context = {
         'profile': profile,
